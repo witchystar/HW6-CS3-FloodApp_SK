@@ -27,17 +27,16 @@ This application directly addresses key decision-makers defined in the Data Scie
 - **Data Conditioning:** Data was cleansed of incomplete records and dynamically scaled. The application enables real-time dynamic train/test splitting (50%–90%) to validate model stability and generalize across different sample sizes.
 
 ### Algorithm Selection & Mathematical Details (Lifecycle Phase 3 & 4: Model Planning & Building)
-We implemented **Multiple Linear Regression (Ordinary Least Squares)** to fit a linear relationship between environmental predictors and predicted flood risk severity.
+We implemented **Multiple Linear Regression (Ordinary Least Squares)** to model the relationship between environmental predictors and predicted flood risk severity.
 
 **Mathematical Specification:**
-Y = B0 + B1X1 + B2X2 + B3X3 + B4X4 + E
 $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 X_4 + \epsilon$$
 
 **Where:**
   - Y = Estimated Flood Risk Index score.
-  - B0 = Y-intercept (baseline risk when predictors are zero).
-  - B1, B2, B3, B4 = Partial regression coefficients measuring the individual unit effect of Rainfall, Drainage, Deforestation, and Urbanization.
-  - E = Residual error term, minimized by OLS: $\sum (Y_i - \hat{Y}_i)^2$
+  - $\beta_0$ = Y-intercept (baseline risk when predictors are zero).
+  - $\beta_1, \beta_2, \beta_3, \beta_4$ = Partial regression coefficients measuring the individual unit effect of Rainfall, Drainage, Deforestation, and Urbanization.
+  - $\epsilon$ = Residual error term, minimized by OLS: $\sum (Y_i - \hat{Y}_i)^2$
 
 ### Algorithm Selection & Mathematical Details (Lifecycle Phase 3 & 4: Model Planning & Building)
 IDK
