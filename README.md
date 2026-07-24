@@ -8,7 +8,7 @@
 **GitHub Check Code ->** shiny::runGitHub("HW6-CS3-FloodApp_SK", "witchystar")
 
 ### Executive Summary & Problem Framing (Lifecycle Phase 1: Discovery)
-Monsoon flooding presents severe socioeconomic risks across Asian regions, causing catastrophic infrastructure damage and displacement. <u>The primary objective of this project is to build an operationalized, interactive predictive data product that models regional Flood Risk Index scores using environmental features.</u>  
+Monsoon flooding poses severe socioeconomic risks across Asia, causing catastrophic infrastructure damage and displacement. <u>The primary objective of this project is to build an operationalized, interactive predictive data product that models regional Flood Risk Index scores using environmental features.</u>  
 
 This application directly addresses key decision-makers defined in the Data Science Lifecycle:
   - **Business Users/Stakeholders:** Regional emergency management teams and municipal civil engineers who require data-driven forecasts for proactive disaster planning and resource allocation.
@@ -38,5 +38,18 @@ $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 X_4 + \epsilon
   - $\beta_1, \beta_2, \beta_3, \beta_4$ = Partial regression coefficients measuring the individual unit effect of Rainfall, Drainage, Deforestation, and Urbanization.
   - $\epsilon$ = Residual error term, minimized by OLS: $\sum (Y_i - \hat{Y}_i)^2$
 
-### Algorithm Selection & Mathematical Details (Lifecycle Phase 3 & 4: Model Planning & Building)
-IDK
+### Key Empirical Findings & Model Evaluation (Lifecycle Phase 5: Evaluation)
+  - **Model Fitness ($R^2$ & Residuals):** Ordinary Least Squares modeling demonstrated a strong goodness-of-fit. Testing on an 80/20 train-test split showed strong correlation between actual and predicted risk scores on the test set visualization.
+
+  - **Primary Drivers:**
+    - <u>Rainfall</u> served as the dominant positive driver of flood risk ($\beta_1 > 0$).
+    - <u>Drainage Capacity</u> functioned as the primary mitigating factor ($\beta_2 < 0$).
+
+  - **Interactive Scenario Insight:** Using the live app's scenario simulator, decreasing drainage capacity while holding rainfall high leads to an exponential increase in predicted risk levels.
+
+### Deployment & Practical Impact (Lifecycle Phase 6: Operationalize)
+The application is fully operationalized and deployed via shinyapps.io
+
+**Recommendations for Disaster Relief Teams:**
+  1) **Infrastructure Priority:** Civil planning boards should prioritize expanding municipal drainage capacity, as model outputs indicate it is the most effective operational lever for offsetting heavy monsoon rainfall.
+  2) **Scenario Planning:** Municipal planners can utilize the app's interactive sliders to run "what-if" simulations, establishing risk thresholds that trigger early evacuation notices before extreme storm events.
