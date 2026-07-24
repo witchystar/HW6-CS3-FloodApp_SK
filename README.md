@@ -5,7 +5,7 @@
 
 **Live Shiny Application Link:** <u>https://witchystar.shinyapps.io/flood_app/</u>
 
-**GitHub Check Code:** shiny::runGitHub("HW6-CS3-FloodApp_SK", "witchystar")
+**GitHub Check Code ->** shiny::runGitHub("HW6-CS3-FloodApp_SK", "witchystar")
 
 ### Executive Summary & Problem Framing (Lifecycle Phase 1: Discovery)
 Monsoon flooding presents severe socioeconomic risks across Asian regions, causing catastrophic infrastructure damage and displacement. <u>The primary objective of this project is to build an operationalized, interactive predictive data product that models regional Flood Risk Index scores using environmental features.</u>  
