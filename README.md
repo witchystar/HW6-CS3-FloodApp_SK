@@ -1,11 +1,11 @@
 # Homework 6 - Case Study 3 Report: Asian Monsoon Flood Risk Index Prediction App
 ## By: Shaniya Khatua
 
-Kaggle Dataset Link: https://www.kaggle.com/datasets/aliahmadmphil/asian-monsoon-flood-prediction-and-risk-index
+**Kaggle Dataset Link:** <u>https://www.kaggle.com/datasets/aliahmadmphil/asian-monsoon-flood-prediction-and-risk-index</u>
 
-Live Shiny Application Link: https://witchystar.shinyapps.io/flood_app/
+**Live Shiny Application Link:** <u>https://witchystar.shinyapps.io/flood_app/</u>
 
-GitHub Check Code: [ shiny::runGitHub("HW6-CS3-FloodApp_SK", "witchystar") ] (copy what's in the brackets)
+**GitHub Check Code:** <u>shiny::runGitHub("HW6-CS3-FloodApp_SK", "witchystar")</u>
 
 ### Executive Summary & Problem Framing (Lifecycle Phase 1: Discovery)
 Monsoon flooding presents severe socioeconomic risks across Asian regions, causing catastrophic infrastructure damage and displacement. <u>The primary objective of this project is to build an operationalized, interactive predictive data product that models regional Flood Risk Index scores using environmental features.</u>  
