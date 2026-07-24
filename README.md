@@ -33,7 +33,7 @@ We implemented **Multiple Linear Regression (Ordinary Least Squares)** to model 
 $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_3 + \beta_4 X_4 + \epsilon$$
 
 **Where:**
-  - Y = Estimated Flood Risk Index score.
+  - $Y$ = Estimated Flood Risk Index score.
   - $\beta_0$ = Y-intercept (baseline risk when predictors are zero).
   - $\beta_1, \beta_2, \beta_3, \beta_4$ = Partial regression coefficients measuring the individual unit effect of Rainfall, Drainage, Deforestation, and Urbanization.
   - $\epsilon$ = Residual error term, minimized by OLS: $\sum (Y_i - \hat{Y}_i)^2$
